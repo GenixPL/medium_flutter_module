@@ -5,11 +5,7 @@ plugins {
 
 android {
     namespace = "com.genix.myapplication"
-    compileSdk {
-        version = release(37) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.genix.myapplication"
