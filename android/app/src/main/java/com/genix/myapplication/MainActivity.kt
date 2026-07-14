@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 // TODO(genix): fragment
 // TODO(genix): navigation
 // TODO(genix): build aar vs compile directly
+// TODO(genix): freeing up resources
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
