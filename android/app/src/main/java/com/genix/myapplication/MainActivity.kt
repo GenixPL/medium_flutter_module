@@ -9,21 +9,21 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.darkColorScheme
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 
 // TODO(genix): passing data around
 // TODO(genix): multiple modules (umbrella pattern)
 // TODO(genix): activity
 // TODO(genix): fragment
 // TODO(genix): navigation
+// TODO(genix): build aar vs compile directly
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaterialTheme {
+            MaterialTheme(colorScheme = darkColorScheme()) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Text(
                         text = "Hello",
