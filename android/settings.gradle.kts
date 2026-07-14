@@ -19,6 +19,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // TODO(genix): this has been added
+        maven("https://storage.googleapis.com/download.flutter.io")
     }
 }
 

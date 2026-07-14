@@ -3,7 +3,6 @@ package com.genix.myapplication
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,6 +21,7 @@ import androidx.compose.ui.Modifier
 // TODO(genix): navigation
 // TODO(genix): build aar vs compile directly
 // TODO(genix): freeing up resources
+// TODO(genix): investigate: To avoid Dex merging issues, flutter.androidPackage should not be identical to your host app's package name.
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
