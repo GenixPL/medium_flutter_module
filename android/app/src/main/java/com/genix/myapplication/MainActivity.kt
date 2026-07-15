@@ -7,12 +7,14 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import io.flutter.embedding.android.FlutterActivity
 
 // TODO(genix): passing data around
 // TODO(genix): multiple modules (umbrella pattern)
@@ -38,11 +40,23 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
-                        Text("1")
+
+                        Button(
+                            onClick = ::startFlutterActivity,
+                        ) {
+                            Text("flutter activity")
+                        }
+
                         Text("2")
                     }
                 }
             }
         }
+    }
+
+    fun startFlutterActivity() {
+        startActivity(
+            FlutterActivity.createDefaultIntent(this)
+        )
     }
 }
