@@ -18,12 +18,17 @@ import io.flutter.embedding.android.FlutterActivity
 
 // TODO(genix): passing data around
 // TODO(genix): multiple modules (umbrella pattern)
+// TODO(genix): use the dino game
 // TODO(genix): activity
 // TODO(genix): fragment
 // TODO(genix): navigation
 // TODO(genix): build aar vs compile directly
+
+// TODO(genix): check, and record, memory spikes when doing stuff
+// TODO(genix): warming up vs not
 // TODO(genix): freeing up resources
-// TODO(genix): investigate: To avoid Dex merging issues, flutter.androidPackage should not be identical to your host app's package name.
+
+// TODO(genix): investigate (check why, if flutter crates something underneath and the names conflict): To avoid Dex merging issues, flutter.androidPackage should not be identical to your host app's package name.
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
