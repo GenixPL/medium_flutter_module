@@ -22,7 +22,9 @@ import io.flutter.embedding.android.FlutterActivity
 // TODO(genix): activity
 // TODO(genix): fragment
 // TODO(genix): navigation
+
 // TODO(genix): build aar vs compile directly
+// TODO(genix): flutter attach
 
 // TODO(genix): check, and record, memory spikes when doing stuff
 // TODO(genix): warming up vs not
