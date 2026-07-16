@@ -1,6 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 android {
@@ -57,8 +62,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
-    // TODO(genix): this has been added
-    debugImplementation("com.example.flutter_module:flutter_debug:1.0")
-    releaseImplementation("com.example.flutter_module:flutter_release:1.0")
     implementation(project(":flutter"))
 }

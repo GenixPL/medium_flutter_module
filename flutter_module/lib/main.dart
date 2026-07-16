@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      backgroundColor: Colors.amber,
+      backgroundColor: Colors.blue,
       body: Center(
         child: Column(
           mainAxisAlignment: .center,

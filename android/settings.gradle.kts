@@ -23,7 +23,6 @@ dependencyResolutionManagement {
 
         // TODO(genix): this has been added
         maven("https://storage.googleapis.com/download.flutter.io")
-        maven(url = "../flutter_module/build/host/outputs/repo")
     }
 }
 
